@@ -7,8 +7,8 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
 s.authors      = { 'tangjr' => '1807919390@qq.com'}
 s.platform     = :ios, "7.0"
 s.source       = { :git => "https://github.com/wangyangla/TencentOpenAPI.git", :tag => s.version }
-s.ios.vendored_frameworks = 'TencentOpenAPI.framework'
-s.resource = 'TencentOpenApi_IOS_Bundle.bundle'
+s.vendored_frameworks = 'TencentOpenAPI.framework'
+s.resource = '/*.{png,xib,nib,bundle}'
 s.frameworks =  'TencentOpenAPI', 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony'
 s.libraries = 'iconv', 'sqlite3', 'stdc++', 'z'
 s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/"' }
